@@ -14,7 +14,7 @@ include 'config/Database.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud POO - Quete 10</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="public/styles/style.css">
 </head>
 
 <body>
@@ -193,7 +193,7 @@ include 'config/Database.php';
                 if ($manager->tableVerif('champion') == FALSE) {
                     include 'templates/messages/table/noTable.php';
                 }
-                
+
                 if ($manager->tableVerif('champion') == TRUE) {
                     $list = $manager->readAll('champion');
                     if (!empty($list)) {
